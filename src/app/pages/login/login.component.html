@@ -1,39 +1,4 @@
-<!-- <div class="parent">
-    <div class="container">
-        <div class="row">
-
-          <div class="col-lg-6"></div>
-   
-          <div class="col-lg-6 d-flex align-items-center justify-content-center right-side">
-            <div class="form-2-wrapper">
-              <div class="logo text-center">
-                <h2>Logo</h2>
-              </div>
-              <h2 class="text-center mb-4">Sign Into Your Account</h2>
-              <form action="#">
-                <div class="mb-3 form-box">
-                  <input type="email" class="form-control" id="email" [(ngModel)]="loginObj.username" name="username" placeholder="Enter Your Email" required>
-                </div>
-                <div class="mb-3">
-                  <input type="password" class="form-control" id="password" [(ngModel)]="loginObj.password" name="password" placeholder="Enter Your Password" required>
-                </div>
-                <div class="mb-3">
-                   <p>Test Credentials: userName:  admin, password:  112233</p> 
-                </div>
-                <button type="button" (click)="onLogin()" class="btn btn-outline-secondary login-btn w-100 mb-3">Login</button>
-                <div class="social-login mb-3 type--A">
-                  
-                </div>
-              </form>
-      
-              
-            </div>
-          </div>
-        </div>
-      </div>
-</div> -->
-
-  
+<!-- 
 <div class="parent">
   <div class="image-section">
     <img src="https://media.istockphoto.com/id/1399565382/photo/young-happy-mixed-race-businessman-standing-with-his-arms-crossed-working-alone-in-an-office.jpg?s=612x612&w=0&k=20&c=buXwOYjA_tjt2O3-kcSKqkTp2lxKWJJ_Ttx2PhYe3VM=" alt="African woman in headwrap">
@@ -45,13 +10,13 @@
     <form id="login-form">
       <div class="form-group">
         <label for="username">User name</label>
-        <!-- <input type="text" id="username" name="username" required> -->
+       
         <input type="email"  id="email" [(ngModel)]="loginObj.username" name="username" placeholder="Enter Your Email" required>
 
       </div>
       <div class="form-group">
         <label for="password">Password</label>
-        <!-- <input type="password" id="password" name="password" required> -->
+        
         <input type="password"  id="password" [(ngModel)]="loginObj.password" name="password" placeholder="Enter Your Password" required>
 
       </div>
@@ -78,4 +43,57 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
+
+<section>
+  <div class="parent">
+      <div class="row full-screen align-items-center">
+          <div class="left">
+              <span class="line"></span>
+              <h2>Hello, I'm John More, <br> a <span>digital designer</span></h2>
+              <p>Web Design Tutorial using HTML & CSS</p>
+              <a href="#" class="btn">Contact</a>
+
+              <div class="social-media">
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              </div>
+          </div>
+          <div class="right">
+              <div class="form">
+                  <div class="text-center">
+                     
+                      <div class="card-3d-wrap">
+                          <div class="card-3d-wrapper">
+                              <div class="card-front">
+                                  <div class="center-wrap">
+                                      <h4 class="heading">Log In</h4>
+                                      <div class="form-group">
+                                          <!-- <input type="email" class="form-style" placeholder="Your Email" autocomplete="off"> -->
+                                          <input type="email" class="form-style" id="email" [(ngModel)]="loginObj.username" name="username" placeholder="Enter Your Email" required autocomplete="off"> 
+                                          <i class="input-icon material-icons">alternate_email</i>
+                                      </div>
+
+                                      <div class="form-group">
+                                          <!-- <input type="password" class="form-style" placeholder="Your Password" autocomplete="off"> -->
+                                          <input type="password"  id="password" class="form-style" id="email" [(ngModel)]="loginObj.password" name="password" placeholder="Enter Your Email" required autocomplete="off"> 
+                                          <i class="input-icon material-icons">lock</i>
+                                      </div>
+
+                                      <a  class="btn" (click)="onLogin()">Submit</a>
+                                      <p class="text-center"><a  class="link">Forgot your password?</a></p>
+                                  </div>
+                              </div>
+
+                             
+                          </div>
+                      </div>
+                  </div>
+              </div>    
+          </div>
+      </div>
+  </div>
+</section>

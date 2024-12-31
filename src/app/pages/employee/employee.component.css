@@ -1,0 +1,21 @@
+tr > *:first-child {
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0;
+    min-width: 5rem;
+    z-index: 1;
+   }
+   
+   tr > *:first-child::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    right: 0; 
+    bottom: 0; 
+    left: 0;
+    background-color:tomato;
+    z-index: -1;
+   }
+   body{
+    background-color:#0a2247;
+ }
