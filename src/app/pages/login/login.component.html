@@ -44,56 +44,46 @@
     </div>
   </div>
 </div> -->
+<div class="header">
+  <div class="container">
+    <div class="form-box login">
+        <form action="#">
+            <h1 >Login</h1>
+            <div class="input-box">
+                <!-- <input type="text" placeholder="Username" required> -->
+                <input type="email"  id="email" [(ngModel)]="loginObj.username" name="username" placeholder="Enter Your Email" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <!-- <input type="password" placeholder="Password" required> -->
+                <input type="password"  id="password" [(ngModel)]="loginObj.password" name="password" placeholder="Enter Your Password" required>
 
-<section>
-  <div class="parent">
-      <div class="row full-screen align-items-center">
-          <div class="left">
-              <span class="line"></span>
-              <h2>Hello, I'm John More, <br> a <span>digital designer</span></h2>
-              <p>Web Design Tutorial using HTML & CSS</p>
-              <a href="#" class="btn">Contact</a>
-
-              <div class="social-media">
-                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                  <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-              </div>
-          </div>
-          <div class="right">
-              <div class="form">
-                  <div class="text-center">
-                     
-                      <div class="card-3d-wrap">
-                          <div class="card-3d-wrapper">
-                              <div class="card-front">
-                                  <div class="center-wrap">
-                                      <h4 class="heading">Log In</h4>
-                                      <div class="form-group">
-                                          <!-- <input type="email" class="form-style" placeholder="Your Email" autocomplete="off"> -->
-                                          <input type="email" class="form-style" id="email" [(ngModel)]="loginObj.username" name="username" placeholder="Enter Your Email" required autocomplete="off"> 
-                                          <i class="input-icon material-icons">alternate_email</i>
-                                      </div>
-
-                                      <div class="form-group">
-                                          <!-- <input type="password" class="form-style" placeholder="Your Password" autocomplete="off"> -->
-                                          <input type="password"  id="password" class="form-style" id="email" [(ngModel)]="loginObj.password" name="password" placeholder="Enter Your Email" required autocomplete="off"> 
-                                          <i class="input-icon material-icons">lock</i>
-                                      </div>
-
-                                      <a  class="btn" (click)="onLogin()">Submit</a>
-                                      <p class="text-center"><a  class="link">Forgot your password?</a></p>
-                                  </div>
-                              </div>
-
-                             
-                          </div>
-                      </div>
-                  </div>
-              </div>    
-          </div>
-      </div>
+                <i class='bx bxs-lock-alt' ></i>
+            </div>
+            <div class="forgot-link">
+                <a href="#">Forgot Password?</a>
+            </div>
+            <button type="submit" class="btn" (click)="onLogin()">Login</button>
+            <p><b>Test Credentials</b>: userName: admin, password: 112233</p> 
+            <p>or login with social platforms</p>
+            <div class="social-icons">
+                <a href="#"><i class='bx bxl-google' ></i></a>
+                <a href="#"><i class='bx bxl-facebook' ></i></a>
+                <a href="#"><i class='bx bxl-github' ></i></a>
+                <a href="#"><i class='bx bxl-linkedin' ></i></a>
+            </div>
+        </form>
+    </div>
+  
+  
+  
+    <div class="toggle-box">
+        <div class="toggle-panel toggle-left">
+            <h1>Join Us Today!!</h1>
+            
+        </div>
+  
+    </div>
   </div>
-</section>
+
+</div>
